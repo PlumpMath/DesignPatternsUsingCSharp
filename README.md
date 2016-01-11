@@ -1,2 +1,2 @@
-# DesignPatternsUsingC-
+# DesignPatternsUsingCSharp
 Design Patterns Using C#
