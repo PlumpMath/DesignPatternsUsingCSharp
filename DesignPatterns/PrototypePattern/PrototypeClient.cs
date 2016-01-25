@@ -1,14 +1,15 @@
 ﻿using System;
 
 namespace DesignPatterns.PrototypePattern {
-    public class PrototypeClient {
+    public class PrototypeClient : IDesignPattern {
 
-        private static void Report(string s, Prototype a, Prototype b) {
+        private void Report(string s, Prototype a, Prototype b) {
             Console.WriteLine("\n" + s);
             Console.WriteLine("Prototype " + a + "\nClone      " + b);
         }
 
-        public static void RunPrototypePatternExample() {
+        public void Run() {
+            Console.WriteLine("\n------------------Prototype Pattern------------------");
             PrototypeManager manager = new PrototypeManager();
             Prototype c2, c3;
 
