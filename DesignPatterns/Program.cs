@@ -1,10 +1,11 @@
 ﻿using System;
-using DesignPatterns.PrototypePattern;
 
 namespace DesignPatterns {
     class Program {
         static void Main(string[] args) {
-            PrototypeClient.RunPrototypePatternExample();
+            var designPattern = new DesignPatternFactory();
+            designPattern.PrototypePattern().Run();
+            designPattern.AbstractPattern().Run();
             Console.ReadKey();
         }
     }
